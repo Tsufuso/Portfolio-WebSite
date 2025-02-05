@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/WWeb-game-quiz/static/css/main.39c174d5.css",
-    "main.js": "/WWeb-game-quiz/static/js/main.b58e7220.js",
-    "static/media/me.png": "/WWeb-game-quiz/static/media/me.90a51362bfb7d453f31f.png",
-    "static/media/me-about.png": "/WWeb-game-quiz/static/media/me-about.ad59b26151f708d75a35.png",
-    "static/media/cv.pdf": "/WWeb-game-quiz/static/media/cv.99c50deb68b6f9a9c4a6.pdf",
-    "index.html": "/WWeb-game-quiz/index.html",
-    "main.39c174d5.css.map": "/WWeb-game-quiz/static/css/main.39c174d5.css.map",
-    "main.b58e7220.js.map": "/WWeb-game-quiz/static/js/main.b58e7220.js.map"
+    "main.css": "/site-en-test/static/css/main.39c174d5.css",
+    "main.js": "/site-en-test/static/js/main.cf925108.js",
+    "static/media/me.png": "/site-en-test/static/media/me.90a51362bfb7d453f31f.png",
+    "static/media/me-about.png": "/site-en-test/static/media/me-about.ad59b26151f708d75a35.png",
+    "static/media/cv.pdf": "/site-en-test/static/media/cv.99c50deb68b6f9a9c4a6.pdf",
+    "index.html": "/site-en-test/index.html",
+    "main.39c174d5.css.map": "/site-en-test/static/css/main.39c174d5.css.map",
+    "main.cf925108.js.map": "/site-en-test/static/js/main.cf925108.js.map"
   },
   "entrypoints": [
     "static/css/main.39c174d5.css",
-    "static/js/main.b58e7220.js"
+    "static/js/main.cf925108.js"
   ]
 }
