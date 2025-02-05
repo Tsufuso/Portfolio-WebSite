@@ -29,19 +29,19 @@ const About = () => {
                         <article className='about__card'>
                             <TbCertificate className='about__icon' />
                             <h5>Certifications</h5>
-                            <small>Over 10 Professional Certifications</small>
+                            <small>Over 6 Professional Certifications</small>
                         </article>
 
                         <article className='about__card'>
                             <VscFolderLibrary className='about__icon' />
                             <h5>Completed Educational Projects</h5>
-                            <small>4+ Successfully Delivered</small>
+                            <small>7+ Successfully Delivered</small>
                         </article>
                     </div>
 
                     <p>
                     Welcome to my cybersecurity portfolio! Explore a variety of academic projects, professional certifications, and hands-on experiences. 
-                    I specialize in Cloud Azure security and data protection, showcasing my expertise and growth within the cybersecurity domain.
+                    I specialize in Cloud Azure security and data protection Using AI, showcasing my expertise and growth within the cybersecurity domain.
                     </p>
 
                     <a href="#contact" className='btn btn-primary'>Get in Touch</a>

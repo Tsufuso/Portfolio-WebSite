@@ -1,42 +1,64 @@
-import React from 'react'
-import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
+import React from 'react';
+import './portfolio.css';
 
-//Do not use the images in production
-const data = [
+const data5thYear = [
+    {
+        id: 9,
+        title: '5th Year University - Project: Advanced Cybersecurity Strategies',
+        github: 'https://github.com/example/cybersecurity-strategies',
+    },
+    {
+        id: 10,
+        title: '5th Year University - Project: Enterprise Security Architecture',
+        github: 'https://github.com/example/security-architecture',
+    }
+];
+
+const data4thYear = [
+    {
+        id: 5,
+        title: 'Project: Azure Cloud Web game quiz',
+        download: '/cloudprojet.zip',
+    },
+    {
+        id: 6,
+        title: 'Project: AI TasteLens',
+        github: 'https://github.com/Tsufuso/TasteLens',
+    },
+    {
+        id: 7,
+        title: 'Project: Software-Defined Mobile Network Research',
+        github: 'https://github.com/Tsufuso/Software-Defined-Mobile-Network',
+    },
+    {
+        id: 8,
+        title: 'Project: MITM Attack Network Simulation',
+        download: '/MITM_PROJECT.zip',
+    }
+];
+
+const data3rdYear = [
     {
         id: 1,
-        image: IMG1,
-        title: 'Personal Blog Website uses Jekyll (is a static site generator) and is hosted on Github.',
-        github: 'https://github.com/NguyenVu1310/NguyenVu1310.github.io',
-        demo: 'https://nguyenvu1310.github.io/',
+        title: 'Project: University Restaurant',
+        github: 'https://github.com/Tsufuso/restaurant-universitaire',
     },
     {
         id: 2,
-        image: IMG2,
-        title: 'My Personal Portfolio Website uses React and is deployed on Netlify.',
-        github: 'https://github.com/NguyenVu1310/netlify-personal-site',
-        demo: 'https://nguyenvu-personal-site.netlify.app/',
+        title: 'Project: Library Management',
+        github: 'https://github.com/Tsufuso/Gestion-Biblioth-que.git',
     },
     {
         id: 3,
-        image: IMG3,
-        title: 'A Todo-List application simple developed based on React and deployed on Netlify.',
-        github: 'https://github.com/NguyenVu1310/todoList-react',
-        demo: 'https://nguyenvu-todo-list.netlify.app/',
+        title: 'Project: Storage Product Management',
+        github: 'https://github.com/Tsufuso/Gestion-Produit-Stock-maven.git',
     },
     {
         id: 4,
-        image: IMG4,
-        title: 'A graduation project was done by my team. A website scans malicious content in URLs and blocks sites on blacklists.',
-        github: 'https://github.com/NguyenVu1310/threeblock',
-        demo: 'https://3block.systems/',
-    },
-]
-
+        title: 'Project: Todo Tasks',
+        github: 'https://github.com/Tsufuso/System-Programming-and-Administration.git',
+    }
+];
 
 const Portfolio = () => {
     return (
@@ -44,26 +66,48 @@ const Portfolio = () => {
             <h5>My Recent Projects</h5>
             <h2>Portfolio</h2>
 
+            <h2>5th Year University</h2>
             <div className="container portfolio__container">
-                {
-                    data.map(({ id, image, title, github, demo }) => {
-                        return (
-                            <article key={id} className='portfolio__item'>
-                                <div className="portfolio__item-image">
-                                    <img src={image} alt={title} />
-                                </div>
-                                <h3>{title}</h3>
-                                <div className="portfolio__item-cta">
-                                    <a href={github} className='btn' target='_blank'>Github</a>
-                                    <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
-                                </div>
-                            </article>
-                        )
-                    })
-                }
+                {data5thYear.map(({ id, title, github }) => (
+                    <article key={id} className='portfolio__item'>
+                        <h3>{title}</h3>
+                        <div className="portfolio__item-cta">
+                            <a href={github} className='btn' target='_blank' rel='noreferrer'>Github</a>
+                        </div>
+                    </article>
+                ))}
+            </div><br></br>
+
+            <h2>4th Year University</h2>
+            <div className="container portfolio__container">
+                {data4thYear.map(({ id, title, github, download }) => (
+                    <article key={id} className='portfolio__item'>
+                        <h3>{title}</h3>
+                        <div className="portfolio__item-cta">
+                            {download ? (
+                                <a href={download} className='btn' download>Download</a>
+                            ) : (
+                                <a href={github} className='btn' target='_blank' rel='noreferrer'>Github</a>
+                            )}
+                        </div>
+                    </article>
+                ))}
+            </div><br></br>
+
+
+            <h2>3rd Year University</h2>
+            <div className="container portfolio__container">
+                {data3rdYear.map(({ id, title, github }) => (
+                    <article key={id} className='portfolio__item'>
+                        <h3>{title}</h3>
+                        <div className="portfolio__item-cta">
+                            <a href={github} className='btn' target='_blank' rel='noreferrer'>Github</a>
+                        </div>
+                    </article>
+                ))}
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Portfolio
+export default Portfolio;

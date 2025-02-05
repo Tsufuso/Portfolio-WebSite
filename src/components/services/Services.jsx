@@ -12,36 +12,36 @@ const Services = () => {
                 {/* start Mô tả chi tiết */}
                 <article className="service">
                     <div className="service__head">
-                        <h3>Information Assurance Learning Path</h3>
+                        <h3>Core Cybersecurity Skills</h3>
                     </div>
                     <ul className='service__list'>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Computer Networking</p>
+                            <p>Advanced Network Security & Risk Mitigation</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Open Source Platform and Network Administration</p>
+                            <p>Threat Intelligence & Incident Management</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Risk Management in Information Systems</p>
+                            <p>Ethical Hacking, Penetration Testing & Red Teaming</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Web Security</p>
+                            <p>Cloud Infrastructure Security with Microsoft Azure</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Network Forensics</p>
+                            <p>Encryption Technologies & Data Privacy Governance</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Ethical Hacking and Offensive Security</p>
+                            <p>Identity and Access Management (IAM) Systems</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Incident Response</p>
+                            <p>Comprehensive Database Security (SQL, NoSQL, MongoDB ...)</p>
                         </li>
                     </ul>
                 </article>
@@ -50,32 +50,36 @@ const Services = () => {
                 {/* start Mô tả chi tiết */}
                 <article className="service">
                     <div className="service__head">
-                        <h3>Achieve</h3>
+                        <h3>Certifications & Recognitions</h3>
                     </div>
                     <ul className='service__list'>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p><b>Pre Security </b>Course Certificate on TryHackMe</p>
+                            <p><b>Microsoft Certified Azure Security Engineer Associate(AZ-500)</b></p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p><b>Networking Essentials</b> Course Certificate on Cisco</p>
+                            <p><b>Microsoft Certified Azure Fundamentals(AZ-900)</b></p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p><b>Web Design for Everybody</b> Course Certificate on Coursera</p>
+                            <p><b>EC-Council | Ethical Hacking Essentials (EHE)</b></p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p><b>Python for Everybody</b> Course Certificate on Coursera</p>
+                            <p><b>Cisco | Junior Cybersecurity Analyst</b></p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p><b>Ethical Hacking for Beginners</b> Course Certificate on SimpliLearn</p>
+                            <p><b>PMI | Generative AI Overview for Project Managers</b></p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p><b>Cybersecurity Foundations</b> Course Certificate on Linkedln</p>
+                            <p><b>Fortinet Certified Fundamentals in Cybersecurity</b></p>
+                        </li>
+                        <li>
+                            <BsCheckLg className='service__list-icon' />
+                            <p><b>Cisco | Introduction to Cybersecurity</b></p>
                         </li>
                     </ul>
                 </article>
@@ -84,28 +88,44 @@ const Services = () => {
                 {/* Mô tả chi tiết */}
                 <article className="service">
                     <div className="service__head">
-                        <h3>Research Platform</h3>
+                        <h3>Security Technologies & Platforms</h3>
                     </div>
                     <ul className='service__list'>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Windows 7, 8 and 10</p>
+                            <p>Prompt Engineering for Enhanced Security Automation</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Windows Server 2012 r2 </p>
+                            <p>Azure Sentinel & Key Vault for Secure Operations</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Kali Linux</p>
+                            <p>Nmap & Wireshark for Advanced Network Diagnostics</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>Ubuntu</p>
+                            <p>Metasploit Pro & Burp Suite & Kali Linux for Penetration Testing</p>
                         </li>
                         <li>
                             <BsCheckLg className='service__list-icon' />
-                            <p>BackTrack</p>
+                            <p>Azure Active Directory (Azure AD) for Identity Protection</p>
+                        </li>
+                        <li>
+                            <BsCheckLg className='service__list-icon' />
+                            <p>Microsoft Defender for Cloud - Threat Management</p>
+                        </li>
+                        <li>
+                            <BsCheckLg className='service__list-icon' />
+                            <p>SIEM & Threat Intelligence Platforms for Monitoring</p>
+                        </li>
+                        <li>
+                            <BsCheckLg className='service__list-icon' />
+                            <p>Database Hardening for SQL, NoSQL & MongoDB Systems</p>
+                        </li>
+                        <li>
+                            <BsCheckLg className='service__list-icon' />
+                            <p>AI-Powered Incident Response & Decision Support Systems</p>
                         </li>
                     </ul>
                 </article>

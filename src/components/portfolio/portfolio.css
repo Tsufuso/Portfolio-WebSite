@@ -10,6 +10,14 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 250px; /* Ensures all items have the same height */
+
+    
 }
 
 .portfolio__item:hover {

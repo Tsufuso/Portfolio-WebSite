@@ -1,26 +1,25 @@
-import React from 'react'
-import './contact.css'
-import { HiOutlineMail } from 'react-icons/hi'
-import { RiMessengerLine } from 'react-icons/ri'
-import { TbBrandLinkedin } from 'react-icons/tb'
-import { useRef } from 'react';
-import emailjs from 'emailjs-com'
+import React, { useRef } from 'react';
+import './contact.css';
+import { HiOutlineMail } from 'react-icons/hi';
+import { TbBrandLinkedin } from 'react-icons/tb';
 
 const Contact = () => {
     const form = useRef();
 
-    const sendEmail = (e) => {
+    const handleSendEmail = (e) => {
         e.preventDefault();
+        const formData = new FormData(form.current);
+        const name = formData.get('name');
+        const subject = formData.get('subject') || `Message from ${name}`;
+        const message = formData.get('message');
 
-        emailjs.sendForm('service_s40ojcs', 'template_eh9sppo', form.current, 'Kg2rhkR8J5TfgshRJ')
+        // Construct the mailto link
+        const mailtoLink = `mailto:mr.lalaoui.rayane@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 
-        e.target.reset()
+        // Open the default email client (Outlook, Gmail, etc.)
+        window.location.href = mailtoLink;
 
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+        form.current.reset();
     };
 
     return (
@@ -33,28 +32,27 @@ const Contact = () => {
                     <article className="contact__option">
                         <HiOutlineMail className='contact__option-icon' />
                         <h4>Email</h4>
-                        <h5>tanvunguyen2205@gmail.com</h5>
-                        <a href="mailto:mr.lalaoui.rayane@gmail.com" target="_blank">Send a message</a>
+                        <h5>mr.lalaoui.rayane@gmail.com</h5>
+                        <a href="mailto:mr.lalaoui.rayane@gmail.com" target="_blank" rel="noreferrer">Send a message</a>
                     </article>
 
                     <article className="contact__option">
                         <TbBrandLinkedin className='contact__option-icon' />
-                        <h4>Linkedin</h4>
-                        <h5>Nguyen Vu</h5>
-                        <a href="https://www.linkedin.com/in/rayane-lalaoui-hassani/" target="_blank">Send a message</a>
+                        <h4>LinkedIn</h4>
+                        <h5>Lalaoui Hassani Rayane</h5>
+                        <a href="https://www.linkedin.com/in/rayane-lalaoui-hassani/" target="_blank" rel="noreferrer">Send a message</a>
                     </article>
                 </div>
-                {/* End of contact options */}
 
-                <form ref={form} onSubmit={sendEmail}>
-                    <input type="text" name='name' placeholder='Raymond Rhodes' required />
-                    <input type="email" name='email' placeholder='example@example.com' required />
-                    <textarea name='message' rows="7" placeholder='Hi Vu, I have a question...' required></textarea>
+                <form ref={form} onSubmit={handleSendEmail}>
+                    <input type="text" name='name' placeholder='Your Email' required />
+                    <input type="text" name='subject' placeholder='Subject (Optional)' />
+                    <textarea name='message' rows="7" placeholder='Your Message , be free to ask' required></textarea>
                     <button type='submit' className='btn btn-primary'>Send Message</button>
                 </form>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Contact
+export default Contact;
