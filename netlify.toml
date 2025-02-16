@@ -3,6 +3,5 @@
   publish = "build"
 
 [build.environment]
-  CI = "false"
   NODE_VERSION = "18.20.6"
   GO_VERSION = "1.19"
