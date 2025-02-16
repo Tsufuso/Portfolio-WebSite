@@ -1,8 +1,8 @@
 [build]
   command = "npm run build"
   publish = "build"
-  environment = { CI = "false" }
 
 [build.environment]
+  CI = "false"
   NODE_VERSION = "18.20.6"
   GO_VERSION = "1.19"
