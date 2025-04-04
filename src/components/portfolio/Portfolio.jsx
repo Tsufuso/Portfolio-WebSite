@@ -1,8 +1,6 @@
 import React from 'react';
 import './portfolio.css';
-<<<<<<< HEAD
 
-=======
 {/*
 const data5thYear = [
     {
@@ -18,7 +16,6 @@ const data5thYear = [
 ];*/}
 
 
->>>>>>> 75b838f (Correction des conflits et finalisation d)
 const data4thYear = [
     {
         id: 5,
@@ -71,11 +68,6 @@ const Portfolio = () => {
         <section id='portfolio'>
             <h5>My Recent Projects</h5>
             <h2>Portfolio</h2>
-<<<<<<< HEAD
-            
-            <h2>4th Year University</h2>
-            <div className="container portfolio__container">
-=======
 {/*
             <h2>5th Year University</h2>
             <div className="container portfolio__container">
@@ -91,7 +83,6 @@ const Portfolio = () => {
             */}
             <h2>4th Year University</h2>
             <div className="container portfolio__container">
->>>>>>> 75b838f (Correction des conflits et finalisation d)
                 {data4thYear.map(({ id, title, github, download }) => (
                     <article key={id} className='portfolio__item'>
                         <h3>{title}</h3>
