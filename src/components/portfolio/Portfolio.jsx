@@ -1,6 +1,24 @@
 import React from 'react';
 import './portfolio.css';
+<<<<<<< HEAD
 
+=======
+{/*
+const data5thYear = [
+    {
+        id: 9,
+        title: '5th Year University - Project: Advanced Cybersecurity Strategies ',
+        github: '',
+    },
+    {
+        id: 10,
+        title: '5th Year University - Project: Enterprise Security Architecture',
+        github: '',
+    }
+];*/}
+
+
+>>>>>>> 75b838f (Correction des conflits et finalisation d)
 const data4thYear = [
     {
         id: 5,
@@ -53,9 +71,27 @@ const Portfolio = () => {
         <section id='portfolio'>
             <h5>My Recent Projects</h5>
             <h2>Portfolio</h2>
+<<<<<<< HEAD
             
             <h2>4th Year University</h2>
             <div className="container portfolio__container">
+=======
+{/*
+            <h2>5th Year University</h2>
+            <div className="container portfolio__container">
+                {data5thYear.map(({ id, title, github }) => (
+                    <article key={id} className='portfolio__item'>
+                        <h3>{title}</h3>
+                        <div className="portfolio__item-cta">
+                            <a href={github} className='btn' target='_blank' rel='noreferrer'>Github</a>
+                        </div>
+                    </article>
+                ))}
+            </div><br></br>
+            */}
+            <h2>4th Year University</h2>
+            <div className="container portfolio__container">
+>>>>>>> 75b838f (Correction des conflits et finalisation d)
                 {data4thYear.map(({ id, title, github, download }) => (
                     <article key={id} className='portfolio__item'>
                         <h3>{title}</h3>
