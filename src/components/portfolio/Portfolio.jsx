@@ -1,13 +1,13 @@
 import React from 'react';
 import './portfolio.css';
+const PDF_SIEM = process.env.PUBLIC_URL + '/Projet-Integre-SIEM-Final-V2.pdf';
+
 
 const data5thYear = [
   {
     id: 9,
-    title:
-      'Project: SIEM Implementation & Attacks Simulations',
-    // mets le PDF dans /public à la racine, avec ce nom exact
-    download: '/Projet Integre Siem Final V2.pdf',
+    title: 'Project: SIEM Implementation & Attacks Simulations',
+    download: PDF_SIEM,
   },
 ];
 
@@ -88,7 +88,13 @@ const Portfolio = () => {
                         <h3>{title}</h3>
                         <div className="portfolio__item-cta">
                             {download ? (
-                                <a href={download} className='btn' download>Download</a>
+<a 
+  href={download} 
+  className='btn' 
+  download="Projet-Integre-SIEM-Final-V2.pdf"
+>
+  Download
+</a>
                             ) : (
                                 <a href={github} className='btn' target='_blank' rel='noreferrer'>Github</a>
                             )}
