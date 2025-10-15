@@ -52,7 +52,7 @@ const Experience = () => {
           </div>
 
           <div className="experience__group">
-            <h3>DevOps &amp; CI/CD</h3>
+            <h3>DevOps</h3>
             <div className="experience__content">
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
@@ -61,14 +61,6 @@ const Experience = () => {
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div><h4>GitLab CI (Runners, Pipelines)</h4><Tag level="Proficient" /></div>
-              </article>
-              <article className="experience__details">
-                <BsPatchCheckFill className="experience__details-icon" />
-                <div><h4>Static Code Analysis</h4><Tag level="Checkstyle · SonarQube" /></div>
-              </article>
-              <article className="experience__details">
-                <BsPatchCheckFill className="experience__details-icon" />
-                <div><h4>Documentation &amp; Training</h4><Tag level="Guides · Workshops" /></div>
               </article>
             </div>
           </div>
@@ -97,6 +89,7 @@ const Experience = () => {
                 ['OpenVAS', 'Proficient'],
                 ['John / Hashcat', 'Proficient'],
                 ['OWASP Web Pentest', 'Methodology'],
+                ['ISO 27001 – Information Security Management System', 'Proficient'],
                 ['Reporting & Risk Analysis', 'Professional'],
               ].map(([tool, lvl]) => (
                 <article key={tool} className="experience__details">
