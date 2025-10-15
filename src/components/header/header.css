@@ -1,14 +1,27 @@
 header {
-    height: 100vh;
-    padding-top: 5rem;
-    overflow: hidden;
+  /* ne garde plus 100vh */
+  height: auto;
+  min-height: 55vh;          /* hauteur souple */
+  padding: 1.5rem 0 0;       /* petit espace haut */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+
+
 .header__container {
-    text-align: center;
-    height: 100%;
-    position: relative;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
+
+
+
 
 /*============== CTA ==============*/
 .cta {
@@ -37,28 +50,18 @@ header {
 }
 
 /*============== Me ==============*/
+/* Enlève la forme arrondie */
 .me {
-    background: linear-gradient(var(--color-light), transparent);
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 2rem; /* Diminue la marge pour remonter l'image */
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 3rem 1.5rem 1.5rem 1.5rem; /* Ajuste l'espace intérieur pour mieux centrer */
+  display: none !important;
 }
+
 
 
 /*============== scroll down ==============*/
 .scroll__down {
-    position: absolute;
-    right: -2.3rem;
-    bottom: 8rem;
-    transform: rotate(90deg);
-    font-weight: 500;
-    font-size: 1rem;
+  display: none;  /* masque le texte latéral qui accentue le vide */
 }
+
 
 /*============== scroll down ==============*/
 @media screen and (max-width: 1024px) {
