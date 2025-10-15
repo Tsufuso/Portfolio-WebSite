@@ -1,6 +1,16 @@
 import React from 'react';
 import './portfolio.css';
 
+const data5thYear = [
+  {
+    id: 9,
+    title:
+      'Project: SIEM Implementation & Attacks Simulations',
+    // mets le PDF dans /public à la racine, avec ce nom exact
+    download: '/Projet Integre Siem Final V2.pdf',
+  },
+];
+
 {/*
 const data5thYear = [
     {
@@ -68,19 +78,25 @@ const Portfolio = () => {
         <section id='portfolio'>
             <h5>My Recent Projects</h5>
             <h2>Portfolio</h2>
-{/*
-            <h2>5th Year University</h2>
+
+
+
+<h2>5th Year University</h2>
             <div className="container portfolio__container">
-                {data5thYear.map(({ id, title, github }) => (
+                {data5thYear.map(({ id, title, github, download }) => (
                     <article key={id} className='portfolio__item'>
                         <h3>{title}</h3>
                         <div className="portfolio__item-cta">
-                            <a href={github} className='btn' target='_blank' rel='noreferrer'>Github</a>
+                            {download ? (
+                                <a href={download} className='btn' download>Download</a>
+                            ) : (
+                                <a href={github} className='btn' target='_blank' rel='noreferrer'>Github</a>
+                            )}
                         </div>
                     </article>
                 ))}
             </div><br></br>
-            */}
+
             <h2>4th Year University</h2>
             <div className="container portfolio__container">
                 {data4thYear.map(({ id, title, github, download }) => (
